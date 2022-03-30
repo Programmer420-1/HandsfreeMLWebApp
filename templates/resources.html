@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{% set active_page = "resources" %}
+{% block content %}
+
+<div class="container text-center p-3">
+    <div class="my-5">
+        <h4>Visual references for ASL Alphabet</h3>
+            <br>
+            <img src="{{ url_for('static', filename='images/handsign.jpg') }}" class="img-fluid"
+                style="max-height:80vh">
+    </div>
+    <div class="my-5">
+        <h4>Video reference for ASL Alphabet</h4>
+        <br>
+        <div class="embed-responsive embed-responsive-16b9" style="height: 40vh">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/u3HoC9_ir3s" style="width:50%;height:100%"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

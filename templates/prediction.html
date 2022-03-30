@@ -1,0 +1,11 @@
+{% extends 'base.html'%}
+{% set active_page = "prediction" %}
+{% block content %}
+<div style="height:90vh">
+    <div class="py-3">
+        <h1 style="text-align:center;color: #212529">Live Prediction</h1>
+    </div>
+    <div style="justify-content: center; display: flex; margin-top: 30px;"><img src="{{ url_for('video') }}"
+            class="px-5 img-fluid"></div>
+</div>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'base.html'%}
+{% set active_page = "about" %}
+{% block content %}
+
+<div style="height:90vh;margin:5vh 0 0 0" >
+    <section class="content my-3 px-5">
+        <h4> 
+            What is UMquartet02?
+        </h4>
+        <p>
+            We are a group of 4 first year students from University of Malaya, Malaysia who commit ourselves in Google Solution 2022 and aims to achieve United Nation's SGD 4 and 10 which are Quality Education and Reduced Inequalities respectively. 
+        </p>
+        <div class="row ">
+            <ul class="list-unstyled">
+                <li class="list-item">
+                    <div style="display:flex;align-items:center">
+                        <a href="https://github.com/nwjun" class="mx-2 h3 pt-1">
+                            <i class="bi bi-github" ></i>
+                        </a>    
+                        <p>Nah Wan Jun</p>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div style="display:flex;align-items:center">
+                        <a href="https://github.com/Programmer420-1" class="mx-2 h3 pt-1">
+                            <i class="bi bi-github" ></i>
+                        </a>    
+                        <p>Lim Wei Xin</p>
+                    </div>
+                </li><li class="list-item">
+                    <div style="display:flex;align-items:center">
+                        <a href="https://github.com/mingng18" class="mx-2 h3 pt-1">
+                            <i class="bi bi-github" ></i>
+                        </a>    
+                        <p>Ng Gih Ming</p>
+                    </div>
+                </li><li class="list-item">
+                    <div style="display:flex;align-items:center">
+                        <a href="https://github.com/KuckSN" class="mx-2 h3 pt-1">
+                            <i class="bi bi-github" ></i>
+                        </a>    
+                        <p>Kuck Swee Nien</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="content my-3 px-5">
+        <h4> 
+            Project Intuition
+        </h4>
+        <p>
+            This webapp is made due to the fact that we don't have the technology and knowledge to incorporate Mediapipe into our Flutter application. However, we have already trained a model for most of the ASL alphabets and we do not want let our effor in vain. Hence, we decided to build this web app and host our ML model here as a prove of our effort.
+        </p>
+    </section>
+    <section class="content my-3 px-5">
+        <h4> 
+            Limitations
+        </h4>
+        <p>
+            Despite the remarkable performance of the current model, the model still can't recognize ASL gesture with sequences. For example, English alphabet J and Z. This is due to the fact that our datasets are only static image with labelled landmarks. In the future, we will enhance this model and make it capable to recognize ASL with sequences.
+        </p>
+    </section>
+</div>
+{% endblock %}
