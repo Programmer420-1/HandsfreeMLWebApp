@@ -46,7 +46,7 @@ def extract_keypoints(results):
 prev = None
 class Video(object):
     def __init__(self):
-        self.video = cv2.VideoCapture(0)
+        self.video = cv2.VideoCapture(1)
         self.threshold = 0.7
         self.actions = "a b c d e f g h i k l m n o p q r s t u v w x y".split(" ")
         self.actions = np.array(self.actions)
