@@ -91,7 +91,6 @@ class Video(object):
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 4, cv2.LINE_AA)
                 cv2.putText(image, "Confidence: {:.4f}".format(res[np.argmax(res)]),(15,60),
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 4, cv2.LINE_AA)
-                cv2.imshow('Mediapipe hands', image)
                 
                 return cv2.imencode(".jpg",image)[1].tobytes()
 

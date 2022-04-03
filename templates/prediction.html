@@ -1,11 +1,22 @@
 {% extends 'base.html'%}
 {% set active_page = "prediction" %}
 {% block content %}
-<div style="height:90vh">
+<div
+    style="height:90vh;background-color: #EFF2F1;display:flex;flex-direction:column;align-items:center;justify-content:center;">
     <div class="py-3">
         <h1 style="text-align:center;color: #212529">Live Prediction</h1>
     </div>
-    <div style="justify-content: center; display: flex; margin-top: 30px;"><img src="{{ url_for('video') }}"
-            class="px-5 img-fluid"></div>
+    <div><img src="{{ url_for('video') }}" class="px-5 img-fluid">
+        
+    </div>
+    <button id="toGithub" type="button" style="background-color: #212529" class="btn btn-secondary my-3">Clone Project from github</button>
+    <script type="text/javascript">
+        var button = document.getElementById('toGithub');
+        
+        button.onclick = function() {
+            window.location.replace("https://github.com/Programmer420-1/HandsfreeMLWebApp");
+        }
+
+    </script>
 </div>
 {% endblock %}
