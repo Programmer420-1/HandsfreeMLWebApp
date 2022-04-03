@@ -46,7 +46,7 @@ def extract_keypoints(results):
 prev = None
 class Video(object):
     def __init__(self):
-        self.video = cv2.VideoCapture(1)
+        self.video = cv2.VideoCapture(0)
         self.threshold = 0.7
         self.actions = "a b c d e f g h i k l m n o p q r s t u v w x y".split(" ")
         self.actions = np.array(self.actions)
@@ -91,7 +91,6 @@ class Video(object):
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 4, cv2.LINE_AA)
                 cv2.putText(image, "Confidence: {:.4f}".format(res[np.argmax(res)]),(15,60),
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 4, cv2.LINE_AA)
-                cv2.imshow('Mediapipe hands', image)
                 
                 return cv2.imencode(".jpg",image)[1].tobytes()
 
