@@ -7,12 +7,12 @@ This is a simple local webapp developed with Flask and HTML integrated with Open
 1. Clone this repo
 2. To make sure your machine has all the necessary dependencies required:
   - Windows 
-    1. cd to the directory which contains the `requirement.txt` file
-    2. In terminal, run `pip install -r requirement.txt`
+    1. cd to the directory which contains the `requirements.txt` file
+    2. In terminal, run `pip install -r requirements.txt`
     3. After every dependencies is installed, run `python app.py`
   - Conda
-    1. cd to the directory which contains the `requirement.txt` file
-    2. In Conda terminal, run `conda install -file requirement.txt`
+    1. cd to the directory which contains the `requirements.txt` file
+    2. In Conda terminal, run `conda install -file requirements.txt`
     3. After every dependencies is installed, run `python app.py`
     
 ## At runtime
